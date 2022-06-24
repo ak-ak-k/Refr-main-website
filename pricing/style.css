@@ -6,22 +6,12 @@
 }
 
 .header {
-  background: linear-gradient(
-    98.06deg,
-    #112a61 5.12%,
-    #060d20 46.32%,
-    #432247 98.85%
-  );
-  height: 472px;
+  background: linear-gradient(98.06deg, #112a61 5.12%, #060d20 46.32%, #432247 98.85%);
+  width: -webkit-fill-available;
 }
 
 .heading {
   padding: 20px 80px;
-}
-
-ul {
-  display: flex;
-  align-items: center;
 }
 
 li {
@@ -57,7 +47,7 @@ li {
 .brand {
   font-family: "Inter";
   font-style: normal;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 40px;
   line-height: 58px;
   text-align: center;
@@ -67,11 +57,12 @@ li {
 .get_started {
   font-family: "Inter";
   font-style: normal;
-  font-weight: 500;
+  font-weight: 300;
   font-size: 25px;
   line-height: 48px;
   text-align: center;
   color: #ffffff;
+  margin-bottom: 0;
 }
 
 .get_credits {
@@ -89,7 +80,7 @@ li {
   line-height: 29px;
   text-align: center;
   color: #ffffff;
-  padding: 15px;
+  padding: 16px 24px;
   text-decoration: none;
 }
 
@@ -101,14 +92,39 @@ li {
 /* cards */
 
 .card {
-  width: 279px;
+  width: 100%;
+  max-width: 280px;
   background: #ffffff;
   /* box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2); */
-  box-shadow: -15px 0px 30px rgba(129, 17, 232, 0.1),
-    15px 15px 30px rgba(131, 99, 160, 0.1);
+  box-shadow: -15px 0px 30px rgba(129, 17, 232, 0.1), 15px 15px 30px rgba(131, 99, 160, 0.1);
   border-radius: 8px;
   padding-bottom: 20px;
   cursor: pointer;
+  padding: 22px 16px 0px 16px;
+  position: relative;
+}
+
+.recommended {
+  position: absolute;
+  top: 0;
+  transform: translate(48px, -14px);
+}
+
+.recommended button {
+  background: #8111e8;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  padding: 5px 18px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 32px;
+  border: none;
+
+  text-align: center;
+
+  color: #ffffff;
 }
 
 /* .card:hover {
@@ -123,6 +139,7 @@ li {
   justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
+  width: -webkit-fill-available;
 }
 
 .para {
@@ -146,13 +163,12 @@ li {
   text-align: center;
   color: rgba(0, 0, 0, 0.6);
   padding: 0px 10px 25px 10px;
-  width: 276px;
 }
 
 .money {
   font-family: "Inter";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 30px;
   line-height: 32px;
   text-align: center;
@@ -161,8 +177,9 @@ li {
 
 /* ----------- */
 
-.mt-5 {
-  margin: 100px 0 50px 0;
+.pt_1 {
+  margin: 80px 0 50px 0;
+  width: -webkit-fill-available;
 }
 
 .choose {
@@ -185,14 +202,17 @@ li {
   text-align: center;
   color: #000000;
   padding: 20px;
-  width: 60%;
+  width: 100%;
+  max-width: 1000px;
   margin: auto;
 }
 
 /*  */
 
-.mt-2 {
-  margin: 0 111px;
+.mt_2 {
+  text-align: -webkit-center;
+  margin-top: 5rem !important;
+  width: -webkit-fill-available;
 }
 
 .custom {
@@ -211,7 +231,7 @@ li {
   text-align: center;
   text-transform: capitalize;
   color: #000000;
-  padding: 30px 0 30px 0;
+  padding: 30px 0 0px 0;
 }
 
 .plns {
@@ -233,13 +253,13 @@ li {
   align-items: center;
 }
 
-.contact_sales button {
+.contact_sales a {
   background: #8111e8;
   border-radius: 12px;
   font-family: "Inter";
   font-style: normal;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 29px;
   text-align: center;
   color: #ffffff;
@@ -260,6 +280,7 @@ li {
 .features_section {
   margin: 70px;
   text-align: center;
+  width: -webkit-fill-available;
 }
 
 .feature {
@@ -288,8 +309,7 @@ li {
 
 .left-card:hover {
   transition: all 0.2s ease-out;
-  box-shadow: -15px 0px 30px rgba(129, 17, 232, 0.1),
-    15px 15px 30px rgba(131, 99, 160, 0.1);
+  box-shadow: -15px 0px 30px rgba(129, 17, 232, 0.1), 15px 15px 30px rgba(131, 99, 160, 0.1);
   top: -4px;
   background-color: white;
 }
@@ -307,8 +327,7 @@ li {
 
 .table_left:hover {
   transition: all 0.2s ease-out;
-  box-shadow: -15px 0px 30px rgba(129, 17, 232, 0.1),
-    15px 15px 30px rgba(131, 99, 160, 0.1);
+  box-shadow: -15px 0px 30px rgba(129, 17, 232, 0.1), 15px 15px 30px rgba(131, 99, 160, 0.1);
   top: -4px;
   background-color: white;
 }
@@ -379,8 +398,7 @@ tr {
 
 .price_card:hover {
   transition: all 0.2s ease-out;
-  box-shadow: -15px 0px 30px rgba(129, 17, 232, 0.1),
-    15px 15px 30px rgba(131, 99, 160, 0.1);
+  box-shadow: -15px 0px 30px rgba(129, 17, 232, 0.1), 15px 15px 30px rgba(131, 99, 160, 0.1);
   top: -4px;
   background-color: white;
 }
@@ -400,9 +418,9 @@ tr {
   padding: 10px 0 10px 0;
 }
 
-.texxt {
+/* .texxt {
   margin-top: 23px;
-}
+} */
 
 .txts p {
   font-family: "Inter";
@@ -415,7 +433,8 @@ tr {
 }
 
 .faqs_section {
-  margin: 0px;
+  margin-bottom: 35px;
+  width: -webkit-fill-available;
 }
 
 .faq_text p {
@@ -425,7 +444,7 @@ tr {
   font-size: 30px;
   line-height: 44px;
   text-align: center;
-  padding: 50px 0 64px 0;
+  padding: 50px 0 20px 0;
 }
 
 /* -------------- */
@@ -492,8 +511,9 @@ tr {
   display: flex;
   flex-direction: column;
   gap: 8px;
-  width: 546px;
-  height: fit-content;
+  width: 100%;
+  max-width: 500px;
+  /* height: fit-content; */
   background: #ffffff;
   box-shadow: 0px 15px 30px rgb(0 0 0 / 10%);
   padding: 32px;
@@ -509,7 +529,7 @@ tr {
   font-family: "Inter";
   font-style: normal;
   font-weight: 500;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   line-height: 26px;
 
   text-align: left;
@@ -522,16 +542,22 @@ tr {
   transform: rotate(180deg) translate(-9px, 6px);
 } */
 
+.left_content svg {
+  width: 100%;
+  max-width: 25px;
+}
+
 @media screen and (max-width: 900px) {
   .heading {
     display: grid;
     justify-content: center;
   }
-  .panel {
-    padding: 0;
-  }
+  /* .panel {
+    padding-top: 105px;
+  } */
   .brand {
     font-size: 20px;
+    margin-bottom: 0;
   }
   .get_started {
     font-size: 14px;
@@ -545,21 +571,29 @@ tr {
   .mt-5 {
     margin: 35px;
   }
+  .pt_1 {
+    margin: 25px 0;
+  }
   .choose {
     font-size: 25px;
+    padding: 6px;
   }
   .correct {
     font-size: 15px;
     width: 100%;
+    max-width: 81%;
+    text-align: justify;
+    padding: 10px;
   }
-  .mt-2 {
-    margin: 29px;
+  .cards_section {
+    gap: 50px;
+  }
+  .mt_2 {
+    margin: 52px 0 30px 0 !important;
   }
   .custom {
-    width: 85vw;
-    background: rgba(129, 17, 232, 0.1);
-    border-radius: 12px;
-    padding: 1vw;
+    width: 100%;
+    max-width: 80%;
   }
 
   .custom_pricing {
@@ -594,6 +628,8 @@ tr {
 
   .feature {
     font-size: 30px;
+    margin-bottom: 0;
+    padding: 6px;
   }
 
   .feature_acc {
@@ -638,7 +674,7 @@ tr {
   }
   .faq_text p {
     font-size: 25px;
-    padding: 35px 0 5px 0;
+    padding: 35px 30px 5px 30px;
   }
   .faqs_text {
     font-size: 16px;
@@ -660,6 +696,15 @@ tr {
   }
   .mt {
     margin-top: -15px;
+  }
+  .main_div {
+    margin: 20px auto;
+  }
+  .accordion {
+    padding: 32px;
+    width: 100%;
+    max-width: 380px;
+    text-align: center;
   }
 }
 .container2 {
